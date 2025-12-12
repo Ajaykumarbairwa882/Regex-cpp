@@ -69,3 +69,20 @@ using namespace std;
 //     printN(3);          
 //     return 0;
 // }
+
+
+
+
+
+/// reverse array
+
+void printN(vector<int>v,int n){
+    if(n<0)return; 
+    cout<<v[n]<<" ";
+    printN(v,n-1);
+}
+
+int main(){ 
+    vector<int>v={1,2,3,4,5,6};
+    printN(v,v.size()-1);
+}

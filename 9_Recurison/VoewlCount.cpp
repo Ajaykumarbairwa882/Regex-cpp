@@ -5,7 +5,7 @@ int vowelscount(string &s,int i,int c){
     if(s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u'){
         c++;
     }
-    vowelscount(s,i+1,c);
+   return vowelscount(s,i+1,c);
 }
 int main(){
     string s="ajay";
