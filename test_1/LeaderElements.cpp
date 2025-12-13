@@ -8,7 +8,7 @@ vector<int> Leader(vector<int> &v) {
     int maxRight = INT_MIN;
 
     for (int i = n - 1; i >= 0; i--) {
-        if (v[i] > maxRight) {
+        if (v[i] >= maxRight) {
             result.push_back(v[i]);
             maxRight = v[i];
         }
